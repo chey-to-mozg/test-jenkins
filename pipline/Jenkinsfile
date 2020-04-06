@@ -19,7 +19,7 @@ pipeline
         {
             steps
             {
-                sh 'robot my.rst' 
+                sh 'robot pipline/my.rst' 
             }
         }
     }
