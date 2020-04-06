@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'ls'
-                sh 'python3 main.py'
+                sh 'python3 dop4/main.py'
             }
         }
     }
