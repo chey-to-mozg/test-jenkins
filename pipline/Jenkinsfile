@@ -13,6 +13,7 @@ pipeline
                 sh 'python3 --version'
                 sh 'python3 -m pip install robotframework'
                 sh 'robot --version'
+                sh 'robot pipline/my.rst' 
             }
         }
         stage('func_test')
