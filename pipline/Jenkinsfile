@@ -16,12 +16,5 @@ pipeline
                 sh 'robot pipline/my.rst' 
             }
         }
-        stage('func_test')
-        {
-            steps
-            {
-                sh 'robot pipline/my.rst' 
-            }
-        }
     }
 }
