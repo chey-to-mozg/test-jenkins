@@ -1,9 +1,25 @@
-pipeline {
-    agent { docker { image 'python:3.6.10' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'python3 pipline/main.py'
+pipeline 
+{
+    agent 
+    {
+        docker { image 'python:3.6.10' } 
+    }
+    stages 
+    {
+        stage('build_project') 
+        {
+            steps 
+            {
+                sh 'python3 --version'
+                sh 'python3 -m pip install robotframework'
+                sh 'robot --version'
+            }
+        }
+        stage('func_test')
+        {
+            steps
+            {
+                sh 'robot my.rst' 
             }
         }
     }
