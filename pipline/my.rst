@@ -5,15 +5,15 @@
 .. code:: robotframework
 
     *** Test Cases ***
-    Compress positive number
+    Compare positive number
         Compare number   5
         Status Should Be    GREATER
 
-    Compress negative number
+    Compare negative number
         Compare number   -5
         Status Should Be    LOWER
 
-    Compress zero number
+    Compare zero number
         Compare number   0
         Status Should Be    ZERO
 .. code:: robotframework
