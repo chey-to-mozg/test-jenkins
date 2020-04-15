@@ -6,7 +6,7 @@ def compare(num):
 	if num > 0:
 		print("GREATER")
 	elif num < 0:
-		print("LOWE")
+		print("LOWErest")
 	else:
 		print("ZERO")
 
