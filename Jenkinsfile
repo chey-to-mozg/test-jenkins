@@ -11,8 +11,6 @@ pipeline
             steps 
             {
                 sh 'python3 -m pip install robotframework'
-                sh 'pip install docutils'
-                sh 'robot my.rst' 
             }
         }
     }
