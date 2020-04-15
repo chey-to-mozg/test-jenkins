@@ -6,13 +6,13 @@ pipeline
     }
     stages 
     {
-        stage('build_project') 
+        stage('build_test') 
         {
             steps 
             {
                 sh 'python3 -m pip install robotframework'
                 sh 'pip install docutils'
-                sh 'robot pipline/my.rst' 
+                sh 'robot my.rst' 
             }
         }
     }
